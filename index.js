@@ -24,3 +24,11 @@ form.addEventListener('submit', function (e) {
             renderColors()
         })
 })
+
+document.getElementById('results').addEventListener('click', function (e) {
+    if (e.target.dataset) {
+        const hex = results[e.target.dataset.color].lastElementChild.textContent
+        navigator.clipboard.writeText(hex)
+        alert("Copied the text: " + hex)
+    }
+})

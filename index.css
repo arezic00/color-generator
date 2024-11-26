@@ -74,4 +74,5 @@ main {
 
 .result-color-hex {
     margin: 0.75em 1.5em;
+    cursor: pointer;
 }
