@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <form class="top-bar-form" id="form">
+            <input class="seed-color-inp" type="color" aria-label="Seed color" value="#f55a5a" name="seedColor">
+            <select name="colorSchemeMode" id="colorSchemeMode" class="mode-select">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+            </select>
+            <button type="submit" class="submit-btn">Get color scheme</button>
+        </form>
+        <div class="results">
+            <div class="result">
+                <div class="result-color"></div>
+                <p class="result-color-hex">#AAAAAA</p>
+            </div>
+            <div class="result">
+                <div class="result-color"></div>
+                <p class="result-color-hex">#AAAAAA</p>
+            </div>
+            <div class="result">
+                <div class="result-color"></div>
+                <p class="result-color-hex">#AAAAAA</p>
+            </div>
+            <div class="result">
+                <div class="result-color"></div>
+                <p class="result-color-hex">#AAAAAA</p>
+            </div>
+            <div class="result">
+                <div class="result-color"></div>
+                <p class="result-color-hex">#AAAAAA</p>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

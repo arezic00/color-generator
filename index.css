@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1c1c;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: #d5d4d8;
+}
+
+main {
+    background-color: #1f2937;
+    min-width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.top-bar-form {
+    display: flex;
+    gap: 10px;
+    padding: 1.5em 1em;
+}
+
+.seed-color-inp {
+    width: 61px;
+    height: 44px;
+}
+
+.mode-select {
+    flex: 1;
+    background-color: transparent;
+    color: inherit;
+}
+
+.mode-select>option {
+    background-color: #1f2937;
+}
+
+.submit-btn {
+    background-color: #3D4B60;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.submit-btn,
+.mode-select {
+    font-family: inherit;
+    border-radius: 6px;
+    padding: 0 1em;
+}
+
+.results {
+    display: flex;
+}
+
+.result {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.result-color {
+    flex: 1;
+}
+
+.result-color-hex {
+    margin: 0.75em 1.5em;
+}
